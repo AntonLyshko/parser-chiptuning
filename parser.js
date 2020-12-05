@@ -1,18 +1,17 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const translate = require('translate');
-//const mark = 'Volkswagen';
+
 
 const start = async () => {
-  await rename('./pages/');
-  // await MarkCollect();
-  // await linkCollect();
-  // await PageStiller();
-  // await modalParser();
-  //await enginesParser();
-  // await textTranslaterCS();
-  // await textTranslaterEN();
-  // await textTranslaterRU();
+  await MarkCollect();
+  await linkCollect();
+  await PageStiller();
+  await modalParser();
+  await enginesParser();
+  await textTranslaterCS();
+  await textTranslaterEN();
+  await textTranslaterRU();
 };
 
 translate.engine = 'yandex';
